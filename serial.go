@@ -42,6 +42,9 @@ type Port interface {
 
 	// Close the serial port
 	Close() error
+
+	// Check if underlying port is nil
+	IsNil() bool
 }
 
 // ModemStatusBits contains all the modem status bits for a serial port (CTS, DSR, etc...).

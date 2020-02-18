@@ -58,6 +58,10 @@ func (port *windowsPort) Close() error {
 	return syscall.CloseHandle(port.handle)
 }
 
+func (port *windowsPort) IsNil() bool {
+	return port == nil
+}
+
 func (port *windowsPort) Read(p []byte) (int, error) {
 	var readed uint32
 	params := &dcb{}

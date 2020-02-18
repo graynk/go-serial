@@ -51,6 +51,10 @@ func (port *unixPort) Close() error {
 	return nil
 }
 
+func (port *unixPort) IsNil() bool {
+	return port == nil
+}
+
 func (port *unixPort) Read(p []byte) (int, error) {
 	port.closeLock.RLock()
 	defer port.closeLock.RUnlock()
