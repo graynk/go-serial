@@ -1,4 +1,4 @@
-module github.com/graynk/serial
+module github.com/graynk/go-serial
 
 go 1.13
 
