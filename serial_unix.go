@@ -15,7 +15,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"go.bug.st/serial/unixutils"
+	"github.com/graynk/go-serial/unixutils"
 	"golang.org/x/sys/unix"
 )
 
